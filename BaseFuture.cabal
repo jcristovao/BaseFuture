@@ -1,0 +1,39 @@
+name:                BaseFuture
+version:             0.1.0.0
+synopsis:            Next GHC/Base functions that can easily be backported
+-- description:         
+homepage:            https://github.com/jcristovao/BaseFuture
+license:             BSD3
+license-file:        LICENSE
+author:              João Cristóvão
+maintainer:          jmacristovao@gmail.com
+category:            Data
+build-type:          Simple
+
+-- Extra files to be distributed with the package, such as examples or a 
+-- README.
+extra-source-files: README.md
+
+-- Constraint on the version of Cabal needed to build this package.
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Data.Either.Base470
+                       Data.Bool.Base470
+                       Data.Foldable.Base470
+                       Data.Functor.Base470
+                       Data.Traversable.Base470
+                       Control.Applicative.Base470
+  
+  -- other-modules:       
+  other-extensions:    CPP
+  -- Can base be even less than 4.6?
+  -- probably so...
+  build-depends:       base >=4.6  
+  
+  -- Directories containing source files.
+  -- hs-source-dirs:      
+  
+  -- Base language which the package is written in.
+  default-language:    Haskell2010
+  
