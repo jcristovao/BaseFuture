@@ -42,9 +42,9 @@ Each of these modules re-exports the installed version of the module, plus the a
 
 You are most welcome to contribute. The rules are just common-sense, I guess:
 
-1) Include only stuff with no dependencies on new compiler features
-2) Focus mainly on additional typeclasses instances
-3) Or new functions, that otherwise should not interfere with existing code.
-4) Use CPP to translate the code into NOP when the new compiler finally enters the Haskell Platform.
+* Include only stuff with no dependencies on new compiler features
+* Focus mainly on additional typeclasses instances
+* Or new functions, that otherwise should not interfere with existing code.
+* Use CPP to translate the code into NOP when the new compiler finally enters the Haskell Platform.
 
 As a final note, all this code _is_ from the GHC code base. I take absolutely no credit for it, I just re-packaged it.
