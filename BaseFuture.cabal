@@ -1,5 +1,5 @@
 name:                BaseFuture
-version:             0.1.0.0
+version:             0.2.0.0
 synopsis:            Next GHC/Base functions that can easily be backported
 -- description:         
 homepage:            https://github.com/jcristovao/BaseFuture
@@ -18,12 +18,12 @@ extra-source-files: README.md
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     Data.Either.Base470
-                       Data.Bool.Base470
-                       Data.Foldable.Base470
-                       Data.Functor.Base470
-                       Data.Traversable.Base470
-                       Control.Applicative.Base470
+  exposed-modules:     Data.Either.Compat
+                       Data.Bool.Compat
+                       Data.Foldable.Compat
+                       Data.Functor.Compat
+                       Data.Traversable.Compat
+                       Control.Applicative.Compat
   
   -- other-modules:       
   other-extensions:    CPP

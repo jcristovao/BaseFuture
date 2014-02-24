@@ -38,14 +38,14 @@
 --
 -----------------------------------------------------------------------------
 
-module Data.Traversable.Base470 (
+module Data.Traversable.Compat (
     module Data.Traversable
   , Traversable(..)
 ) where
 
 #if __GLASGOW_HASKELL__ < 707
 import Data.Traversable
-import Data.Foldable.Base470()
+import Data.Foldable.Compat()
 import Control.Applicative (Const(..),pure,(<$>))
 
 instance Traversable (Either a) where

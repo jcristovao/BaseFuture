@@ -21,7 +21,7 @@
 --
 -----------------------------------------------------------------------------
 
-module Data.Foldable.Base470 (
+module Data.Foldable.Compat (
     module Data.Foldable
   , Foldable(..)
 ) where

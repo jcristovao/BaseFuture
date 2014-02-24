@@ -14,7 +14,7 @@
 --
 -----------------------------------------------------------------------------
 
-module Data.Either.Base470 (
+module Data.Either.Compat (
   module Data.Either
 #if __GLASGOW_HASKELL__ < 707
   , isLeft

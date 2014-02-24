@@ -14,7 +14,7 @@
 -- Functors: uniform action over a parameterized type, generalizing the
 -- 'map' function on lists.
 
-module Data.Functor.Base470 (
+module Data.Functor.Compat (
     module Data.Functor
 #if __GLASGOW_HASKELL__ < 707
   , ($>)

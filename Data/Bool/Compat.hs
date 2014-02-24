@@ -16,7 +16,7 @@
 --
 -----------------------------------------------------------------------------
 
-module Data.Bool.Base470 (
+module Data.Bool.Compat (
     module Data.Bool
 #if __GLASGOW_HASKELL__ < 707
   , bool

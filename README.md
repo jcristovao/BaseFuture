@@ -34,7 +34,7 @@ import Data.Either
 Try:
 
 ```
-import Data.Either.Base470
+import Data.Either.Compat
 ```
 
 Each of these modules re-exports the installed version of the module, plus the added functions or instances.

@@ -32,14 +32,16 @@
 -- by Conor McBride and Ross Paterson, online at
 -- <http://www.soi.city.ac.uk/~ross/papers/Applicative.html>.
 
-module Control.Applicative.Base470 (
-    module Control.Applicative
-
+module Control.Applicative.Compat (
+#if !MIN_VERSION_base(4,7,0)
+  , Const(..)
+  , WrappedMonad(..)
+#endif
     ) where
 
+#if !MIN_VERSION_base(4,7,0)
 import Control.Applicative
 import Data.Monoid (Monoid(..))
-
 
 -- Added in base-4.7.0.0
 instance Monoid a => Monoid (Const a b) where
@@ -50,3 +52,4 @@ instance Monoid a => Monoid (Const a b) where
 instance Monad m => Monad (WrappedMonad m) where
     return = WrapMonad . return
     a >>= f = WrapMonad (unwrapMonad a >>= unwrapMonad . f)
+#endif
