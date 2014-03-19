@@ -33,6 +33,7 @@
 -- <http://www.soi.city.ac.uk/~ross/papers/Applicative.html>.
 
 module Control.Applicative.Compat (
+  module Control.Applicative
 #if !MIN_VERSION_base(4,7,0)
   , Const(..)
   , WrappedMonad(..)
