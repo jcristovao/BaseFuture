@@ -1,5 +1,7 @@
-BaseFuture
+BaseFuture (deprecated)
 ==========
+
+_Note_: this project has been merged with [base-compat](https://github.com/sol/base-compat), and thus it has been deprecated.
 
 GHC current development branch, 7.7 (soon 7.8) adds some new features that are perfectly retroactive into older versions.
 
